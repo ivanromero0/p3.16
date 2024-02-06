@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    color: blue;
+    max-height: 800px;
+    font-weight: 100;
+}
+h1::first-letter{
+    color: black;
+    height: 200px;
+    font-size: 150px;
+}
+*{
+    background-color: lightblue;
+}
+nav{
+    text-align: center;
+}
+
+a.arriba{
+    
+    font-size: x-large;
+}
+
+a.arriba:hover{
+    background-color: yellow;
+    color: red;
+}
+ 
+p.roja::first-line {
+color: red;
+}
+
+a.abajo:visited {
+    background-color: blue;
+    color: white;
+}
+
+
+a.abajo:link {
+    background-color: white;
+    color: blue;
+}
+
+h2 {
+    counter-reset: cuenta-productos;
+}
+p.productos::before{
+    content: counter(cuenta-productos) " ." ;
+   counter-increment: cuenta-productos;
+}
+
+img {
+    left: 80%;
+    position: relative;
+    top: -400px;
+    height: 300px;
+}
